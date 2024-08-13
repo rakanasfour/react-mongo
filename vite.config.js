@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/': {
-        target: 'http://backend-service.default.svc.cluster.local',
+        target: 'http://java-backend-service.default.svc.cluster.local',
         changeOrigin: true,
       },
     },
