@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/': {
-        target: 'http://mongo-backend-service.default.svc.cluster.local',
+        target: 'http://mongo-backend-service.backend.svc.cluster.local',
         changeOrigin: true,
       },
     },
